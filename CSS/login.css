@@ -1,0 +1,84 @@
+body{
+    font-family: Helvetica;
+    text-align: center ;
+    color: white;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #666;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+ul li{
+    margin-right: 22px;    
+}
+
+ul li a{
+    color: #fff ;
+}
+
+form{
+    background-color: #333;
+    /*display: flex;*/
+    justify-content: center;
+    align-items: center;
+    height: 65vh;   
+}
+form div div label{
+    text-align: left;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+input, button{
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px; 
+}
+
+button{
+    cursor: pointer;    
+}
+button:active{
+    opacity: 0.8;
+}
+
+button[disabled]{
+    opacity: 0.5;
+}
+.recuperar-senha{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    
+}
+
+.entrar{
+    background-color: white;
+    border: none;
+}
+
+.cadastrar{
+    background-color: white;
+    border: none;
+}
+
+footer{
+    padding: 20px;
+    border-top: 1px solid #666;
+    margin-top: 20px;
+}
