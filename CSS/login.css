@@ -29,16 +29,15 @@ ul li a{
 
 form{
     background-color: #333;
-    /*display: flex;*/
-    justify-content: center;
-    align-items: center;
-    height: 65vh;   
-}
-form div div label{
-    text-align: left;
+    display: flex;
+    justify-content: center;     
+    height: 65vh; 
+    flex-direction: column;
 }
 
-input{
+input{    
+    max-width: 280px;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border: none;
@@ -46,11 +45,12 @@ input{
 
 input, button{
     padding: 10px;
-    margin-bottom: 10px;
-    width: 250px; 
+    margin-bottom: 10px;    
 }
 
 button{
+    max-width: 300px;
+    width: 100%;
     cursor: pointer;    
 }
 button:active{
@@ -60,11 +60,16 @@ button:active{
 button[disabled]{
     opacity: 0.5;
 }
+
+.alinhar{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
 .recuperar-senha{
     background-color: transparent;
     border: 1px solid white;
-    color: white;
-    
+    color: white;    
 }
 
 .entrar{

@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="CSS/login.css" />
 </head>
+
 <body>
     <nav>
         <h2> Projeto </h2>
@@ -13,22 +15,17 @@
             <li><a href="">Home</a></li>
             <li><a href="">Produto</a></li>
             <li><a href="login.html" target="_blank">Login</a></li>
-            <li><a href="">Contato</a></li>            
+            <li><a href="">Contato</a></li>
         </ul>
     </nav>
-    
     <form>
         <div>
-            <div><label>Email</label></div>
-            <input type="email" name="email" id="email" onchange="validar()" placeholder="seu@email.com">
-            <div>Email é obrigatório</div>
-            <div>Email inválido</div>
-        </div>
-        <div>
-            <div><label>Senha</label></div>
-            <input type="password" name="password" id="password" placeholder="senha">
-            <div>Email é obrigatório</div>
-            <div>Email inválido</div>
+            <h2>Login</h2>
+            <label class="alinhar" for="username">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label class="alinhar" for="senha">Senha:</label>
+            <input type="senha" id="senha" name="senha" required>
         </div>
         <div>
             <button type="button" class="entrar" id="entrar">Entrar</button>
@@ -39,12 +36,10 @@
         <div>
             <button type="button" class="recuperar-senha" id="recuperar-senha">Recuperar Senha</button>
         </div>
-
     </form>
-
     <footer>
         <p>Joseph &copy;2023</p>
     </footer>
-    
 </body>
+
 </html>
